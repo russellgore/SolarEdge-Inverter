@@ -28,7 +28,7 @@ while True:
         export = export - 65535.0
 
     #How much power we are currently consuming at home
-    consume = genPower - (export/1000)
+    consume = genPower - (export/1000.0)
     
     #get unix time stamp
     currentTime = int(time.time()) 
